@@ -51,6 +51,7 @@ header{
 
 .dropdown-menu a{
     display: block;
+    font-size: 18px;
 }
 
 .dropdown:hover .dropdown-menu{
@@ -70,4 +71,74 @@ footer {
     padding: 10px 0;
     position: relative;
     width: 100%;
+}
+
+main {
+    /*largura máxima */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section{
+    width: 48%;
+}
+
+h2{
+    color: #081122;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+article{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.noticias-conteudo, .review-conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria{
+    color: #af52bf;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.noticias-conteudo h3, .review-conteudo h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.review-conteudo .nota {
+    background-color: #e4961a;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.noticias-conteudo .nota{
+    background-color: #e4961a;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.noticias-conteudo, .reviews-section{
+    width: 48%;
 }
