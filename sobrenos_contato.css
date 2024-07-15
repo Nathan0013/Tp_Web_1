@@ -92,15 +92,10 @@ main{
 }
 
 .textos-main h1 {
+    text-align: left;
     color: #081122;
-    font-size: 32px;
+    font-size: 50px;
     margin-bottom: 10px;
-}
-
-.textos-main .descricao {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
 }
 
 .textos-main h3 {
@@ -109,27 +104,17 @@ main{
     margin-bottom: 5px;
 }
 
-.textos-main .data {
-    font-size: 14px;
-    color: #999;
-}
-
-/*Setar largura*/
-img{
+.img-conteudo{
     margin-top: 15px;
-    width: 100%;
-}
-
-.legenda-imagem{
-    font-size: 15px;
-    color: #555;
+    width: 500px;
+    height: 400px;
+    align-items: left;
+    border-radius: 20px;
 }
 
 .texto-conteudo{
     font-size: 25px;
     margin-top: 20px;
-}
-
-.comeco_ranking{
-    margin-top: 40px;
+    text-justify: auto;
+    text-align: justify;
 }
