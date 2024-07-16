@@ -22,7 +22,6 @@ header{
 
 .navegacao li{
     margin: 0 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
 
@@ -143,7 +142,5 @@ article img{
     color: white;
     padding: 5px;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: bold;
 }
-
-
