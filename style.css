@@ -1,4 +1,5 @@
 *{
+    /*Remove margen padrão*/
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -7,25 +8,48 @@
 header{
     background-color: #081122;
     padding: 5px;
+    /*Largura 100% da tela*/
     width: 100%;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+body{
+    display: flex;
+    /*Direcionamento do flex*/
+    flex-direction: column;
+}
+
+html, body {
+    /*Altura*/
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /*Altura mínima do wrapper para 100% da tela*/
+    min-height: 100vh;
+}
+
 .navegacao ul{
+    /*Remover estilo da lista*/
     list-style: none;
     display: flex;
+    /*Espaço entre os itens*/
     justify-content: space-around;
 }
 
 .navegacao li{
+    /*Margin horizontal Li*/
     margin: 0 50px;
+    /*Negrito*/
     font-weight: bold;
 }
 
 .navegacao a{
+    /*Remover sublinhados dos links*/
     text-decoration: none;
     color: #e4961a;
     font-size: 25px;
@@ -41,10 +65,12 @@ header{
     
 }
 
+/*Menu dropdown*/
 .dropdown-menu{
     position: absolute;
+    /*Sombra no dropdown*/
     box-shadow: 0 0 2px #081122;
-    /*Pra não exibir por padrão*/
+    /*Pra não exibir por padrão (Esconder)*/
     display: none;
 }
 
@@ -69,6 +95,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: relative;
+    /*Largura rodapé*/
     width: 100%;
 }
 
@@ -77,14 +104,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /*Largura Máxima do main*/
     max-width: 1200px;
+    /*Cetralizar o main horizontalmente e coloca margem superior e inferior*/
     margin: 20px auto;
+    /*Padding interno*/
     padding: 0 20px;
+    /*Empurrar o footer para final da página*/
+    flex: 1;
 }
 
 .noticias-section, .reviews-section {
+    /*largura*/
     width: 48%;
+    /*Padding e borda na largura e altura*/
     box-sizing: border-box;
+    /*Margem inferior*/
     margin-bottom: 20px;
 }
 
@@ -106,8 +141,11 @@ article{
 }
 
 article img{
+    /*Largura*/
     width: 350px;
+    /*Altura*/
     height: 250px;
+    /*Cobrir a área sem distorcer*/
     object-fit: cover;
     margin-right: 10px;
     border-radius: 20px;
@@ -115,6 +153,7 @@ article img{
 
 .noticias-conteudo, .review-conteudo{
     display: flex;
+    /*Direção Coluna*/
     flex-direction: column;
 }
 
@@ -143,4 +182,66 @@ article img{
     padding: 5px;
     border-radius: 5px;
     font-weight: bold;
+}
+
+/*Formulário*/
+
+.formulario{
+    margin-left: 500px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-contato{
+    color: #081122;
+    margin-bottom: 20px;
+    font-size: 24px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #e4961a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkgoldenrod;
+}
+
+.texto-placeholder{
+    font-weight: bold;
+}
+
+.texto-contato{
+    text-align: left;
 }
